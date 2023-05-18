@@ -14,8 +14,8 @@ public abstract class AbstractDao <T, ID, R extends JpaRepository<T, ID>> implem
     }
 
     @Override
-    public void save(T entity) {
-        repository.save(entity);
+    public T create(T entity) {
+        return repository.save(entity);
     }
 
     @Override
@@ -31,5 +31,10 @@ public abstract class AbstractDao <T, ID, R extends JpaRepository<T, ID>> implem
     @Override
     public void deleteById(ID id) {
         repository.deleteById(id);
+    }
+
+    @Override
+    public T update(final T entity) {
+        return repository.save(entity);
     }
 }

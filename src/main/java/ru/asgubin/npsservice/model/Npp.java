@@ -31,12 +31,12 @@ public class Npp implements Serializable {
     protected Npp() {
     }
 
-    public Npp(String name, String reactor, String customer, String location, String stage) {
-        this.name = name;
-        this.reactor = reactor;
-        this.customer = customer;
-        this.location = location;
-        this.stage = stage;
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {

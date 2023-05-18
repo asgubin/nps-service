@@ -44,6 +44,30 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>31.0.1-jre</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>listenablefuture</artifactId>
+					<groupId>com.google.guava</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>jsr305</artifactId>
+					<groupId>com.google.code.findbugs</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>error_prone_annotations</artifactId>
+					<groupId>com.google.errorprone</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>j2objc-annotations</artifactId>
+					<groupId>com.google.j2objc</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
 	</dependencies>
 
 	<build>

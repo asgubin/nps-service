@@ -31,4 +31,4 @@ API (Application Programming Interface) выполнен на основе ар�
 
 ### Сборка проекта
 1) Выполнить инициализацию БД postgres
-	psql -U postgres -d digitalChief < digitalChief.sql
+	> psql -U postgres -d digitalChief < digitalChief.sql

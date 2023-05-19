@@ -23,7 +23,8 @@ API (Application Programming Interface) выполнен на основе ар�
 	
 ### Используемые технологии
   
-  - Java 11
-  - Spring Boot, Spring MVC, Spring Data JPA
+  - Java 17
+  - Spring Boot, Spring Web, Spring Data Jpa, Spring Data JDBC
   - PostgreSQL
+  - Google Guava
   - Maven

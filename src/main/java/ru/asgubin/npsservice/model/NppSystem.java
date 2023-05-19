@@ -22,29 +22,21 @@ public class NppSystem implements Serializable {
     @Column(name = "speciality", length = 50)
     private String speciality;
 
-    @Column(name = "safetyClass", length = 50)
+    @Column(name = "safety_class", length = 50)
     private String safetyClass;
 
-    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JoinColumn(name = "nppId", nullable = true)
-    private Npp nppId;
+    @Column(name = "npp_id")
+    private int nppId;
 
     protected NppSystem() {
     }
 
-    public NppSystem(String name, String function, String speciality, String safetyClass, Npp nppId) {
-        this.name = name;
-        this.function = function;
-        this.speciality = speciality;
-        this.safetyClass = safetyClass;
-        this.nppId = nppId;
+    public int getId() {
+        return id;
     }
 
-    public NppSystem(String name, String function, String speciality, String safetyClass) {
-        this.name = name;
-        this.function = function;
-        this.speciality = speciality;
-        this.safetyClass = safetyClass;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -79,11 +71,11 @@ public class NppSystem implements Serializable {
         this.safetyClass = safetyClass;
     }
 
-    public Npp getNppId() {
+    public int getNppId() {
         return nppId;
     }
 
-    public void setNppId(Npp nppId) {
+    public void setNppId(int nppId) {
         this.nppId = nppId;
     }
 }

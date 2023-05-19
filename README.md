@@ -19,7 +19,7 @@
 		- ответственная специальность (speciality);
 		- класс безопасности по НТД (safety_class).
 
-REST API (Application Programming Interface) выполнен на основе архитектурного стиля REST для проведения CRUD (Create, Read, Update, Delete) операций над объектами (npp и systems). Взаимодействие с API реализовано в формате JSON
+API (Application Programming Interface) выполнен на основе архитектурного стиля REST для проведения CRUD (Create, Read, Update, Delete) операций над объектами (npp и systems). Взаимодействие с API реализовано в формате JSON
 	
 ### Используемые технологии
   

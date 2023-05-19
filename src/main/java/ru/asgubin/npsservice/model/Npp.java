@@ -1,7 +1,6 @@
 package ru.asgubin.npsservice.model;
 
-import jakarta.persistence.*;
-
+import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
@@ -11,7 +10,7 @@ public class Npp implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private int id;
+    private Long id;
 
     @Column(name = "name", length = 50)
     private String name;
@@ -31,11 +30,11 @@ public class Npp implements Serializable {
     protected Npp() {
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

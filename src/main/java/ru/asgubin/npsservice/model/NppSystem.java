@@ -1,6 +1,6 @@
 package ru.asgubin.npsservice.model;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 
 import java.io.Serializable;
 
@@ -11,7 +11,7 @@ public class NppSystem implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private int id;
+    private Long id;
 
     @Column(name = "name", length = 50)
     private String name;
@@ -26,16 +26,16 @@ public class NppSystem implements Serializable {
     private String safetyClass;
 
     @Column(name = "npp_id")
-    private int nppId;
+    private Long nppId;
 
     protected NppSystem() {
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -71,11 +71,11 @@ public class NppSystem implements Serializable {
         this.safetyClass = safetyClass;
     }
 
-    public int getNppId() {
+    public Long getNppId() {
         return nppId;
     }
 
-    public void setNppId(int nppId) {
+    public void setNppId(Long nppId) {
         this.nppId = nppId;
     }
 }

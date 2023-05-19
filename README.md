@@ -23,12 +23,16 @@ API (Application Programming Interface) выполнен на основе ар�
 	
 ### Используемые технологии
   
-  - Java 17
-  - Spring Boot, Spring Web, Spring Data Jpa, Spring Data JDBC
-  - PostgreSQL
+  - Java 11
+  - Spring Boot 5, Spring Web, Spring Data Jpa, Spring Data JDBC
+  - PostgreSQL 12
   - Google Guava
-  - Maven
+  - Maven 3.6.0
 
 ### Сборка проекта
-1) Выполнить инициализацию БД postgres
-	> psql -U postgres -d digitalChief < digitalChief.sql
+1) Выполнить инициализацию БД postgres:
+> psql -U postgres -d digitalChief < digitalChief.sql
+2) Выполнить сборку приложения:
+> mvn clean install
+3) Запустить приложение:
+> java -jar nps-service-0.0.1-SNAPSHOT.jar
